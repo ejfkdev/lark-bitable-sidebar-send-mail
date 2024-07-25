@@ -1,115 +1,28 @@
+@import '~@douyinfe/semi-ui/dist/css/semi.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-  background: linear-gradient(to bottom, transparent, #fff) #eceeef;
+  overflow: hidden;
+  color: var(--semi-color-text-0);
+  background-color: var(--semi-color-bg-0);
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Tahoma, PingFang SC, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic UI", "游ゴシック体", "Noto Sans Japanese", Microsoft Yahei, Arial, Hiragino Sans GB, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-p {
-  margin: 0;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-}
-
-.container-box {
-  min-height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  display: flex;
-  margin: 4rem 0 4rem;
-  align-items: center;
-  font-size: 4rem;
-  font-weight: 600;
-}
-
-.logo {
-  width: 6rem;
-  margin: 7px 0 0 1rem;
-}
-
-.name {
-  color: #4ecaff;
-}
-
-.description {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.3rem;
-  color: #1b3a42;
-  margin-bottom: 5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 12px;
-  padding: 0.6rem 0.9rem;
-  font-size: 1.05rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.container-box .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1100px;
-  margin-top: 3rem;
-}
-
-.card {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100px;
-  color: inherit;
-  text-decoration: none;
-  transition: 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus {
-  transform: scale(1.05);
-}
-
-.card h2 {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.card p {
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-top: 1rem;
-}
-
-.arrow-right {
-  width: 1.3rem;
-  margin-left: 0.5rem;
-  margin-top: 3px;
+.icon-doc {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' data-icon='FileLinkWordOutlined'%3E%3Cpath d='M4 3h12.595c.93 0 1.806.355 2.439.96A3.07 3.07 0 0 1 20 6.176V21H7.405a3.53 3.53 0 0 1-2.439-.96A3.068 3.068 0 0 1 4 17.823V3ZM3 1a1 1 0 0 0-1 1v15.823c0 1.373.57 2.69 1.583 3.66A5.529 5.529 0 0 0 7.405 23H21a1 1 0 0 0 1-1V6.176a5.07 5.07 0 0 0-1.583-3.66A5.53 5.53 0 0 0 16.595 1H3Z' fill='currentColor'%3E%3C/path%3E%3Cpath d='M6.75 8a1 1 0 0 1 1-1h8.5a1 1 0 1 1 0 2h-8.5a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h8.5a1 1 0 1 1 0 2h-8.5a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h4.5a1 1 0 1 1 0 2h-4.5a1 1 0 0 1-1-1Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
